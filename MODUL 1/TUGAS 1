@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Layanan Laundry</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        header h1 {
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #hero {
+            background: url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #hero h2 {
+            font-size: 2.5rem;
+        }
+
+        .section {
+            padding: 2rem 0;
+            background-color: #fff;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        .service-cards {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
+
+        .card {
+            flex-basis: 30%;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .card h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        table th, table td {
+            padding: 1rem;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        form input, form select, form textarea {
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        button {
+            padding: 0.75rem;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Layanan Laundry</h1>
+            <nav>
+                <ul>
+                    <li><a href="#layanan">Layanan</a></li>
+                    <li><a href="#harga">Harga</a></li>
+                    <li><a href="#pesanan">Pesan</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Layanan Laundry Cepat & Terpercaya</h2>
+            <p>Serahkan cucian Anda kepada kami. Bersih, segar, dan diantar langsung ke rumah Anda!</p>
+        </div>
+    </section>
+
+    <section id="layanan" class="section">
+        <div class="container">
+            <h2>Layanan Kami</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <img src="c:\Users\rama dhani\Downloads\pngtree-laundry-folding-for-the-home-image_13177328.png" alt="Wash & Fold">
+                    <h3>Cuci & Lipat</h3>
+                    <p>Kami menangani cucian harian Anda, mencuci, melipat, dan mengantarkannya dengan bersih dan segar.</p>
+                </div>
+                <div class="card">
+                    <img src="c:\Users\rama dhani\Downloads\beda-metode-laundry-dan-dry-clean-yang-mungkin-belum-kamu-tahu-08WQRU550E.jpg" alt="Dry Cleaning">
+                    <h3>Cuci Kering</h3>
+                    <p>Layanan cuci kering premium untuk kain-kain halus dan pakaian khusus Anda.</p>
+                </div>
+                <div class="card">
+                    <img src="c:\Users\rama dhani\Downloads\80523493jpg-20211007075843.jpg" alt="Ironing">
+                    <h3>Layanan Setrika</h3>
+                    <p>Layanan setrika rapi untuk menjaga pakaian Anda tetap terlihat tajam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="harga" class="section">
+        <div class="container">
+            <h2>Daftar Harga</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Layanan</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cuci & Lipat</td>
+                        <td>Rp 30.000 / kg</td>
+                    </tr>
+                    <tr>
+                        <td>Cuci Kering</td>
+                        <td>Rp 50.000 / item</td>
+                    </tr>
+                    <tr>
+                        <td>Setrika</td>
+                        <td>Rp 10.000 / item</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="pesanan" class="section">
+        <div class="container">
+            <h2>Pesan Layanan</h2>
+            <form>
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="layanan">Pilih Layanan</label>
+                <select id="layanan" name="layanan" required>
+                    <option value="cuci_lipat">Cuci & Lipat</option>
+                    <option value="cuci_kering">Cuci Kering</option>
+                    <option value="setrika">Setrika</option>
+                </select>
+
+                <label for="berat">Berat (kg) / Jumlah Item</label>
+                <input type="number" id="berat" name="berat" required>
+
+                <label for="alamat">Alamat Pengiriman</label>
+                <textarea id="alamat" name="alamat" required></textarea>
+
+                <button type="submit">Kirim Pesanan</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Layanan Laundry. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+</body>
+</html>
