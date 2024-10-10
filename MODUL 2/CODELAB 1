@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Addition</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .calculator {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        label {
+            font-size: 16px;
+            margin: 10px 0;
+            display: block;
+        }
+
+        input[type="number"] {
+            width: 100px;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .reset-btn {
+            background-color: #dc3545;
+        }
+
+        .reset-btn:hover {
+            background-color: #c82333;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="calculator">
+        <h1>KALKULATOR PENJUMLAHAN</h1>
+        
+        <label for="num1">Bilangan Pertama:</label>
+        <input type="number" id="num1" placeholder="Masukkan angka pertama">
+        
+        <label for="num2">Bilangan Kedua:</label>
+        <input type="number" id="num2" placeholder="Masukkan angka kedua">
+        
+        <br>
+        <button onclick="performAddition()">Jumlahkan</button>
+        <button class="reset-btn" onclick="resetFields()">Reset</button>
+        
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function performAddition() {
+            // Get values from input fields
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+
+            // Check if the inputs are valid numbers
+            if (isNaN(num1) || isNaN(num2)) {
+                document.getElementById('result').innerHTML = 'Harap masukkan angka yang valid.';
+            } else {
+                // Perform the addition
+                const sum = num1 + num2;
+                // Display the result
+                document.getElementById('result').innerHTML = 'Hasil: ' + sum;
+            }
+        }
+
+        function resetFields() {
+            // Clear input fields and result
+            document.getElementById('num1').value = '';
+            document.getElementById('num2').value = '';
+            document.getElementById('result').innerHTML = '';
+        }
+    </script>
+
+</body>
+</html>
